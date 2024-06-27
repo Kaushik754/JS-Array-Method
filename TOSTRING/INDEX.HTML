@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //example 1
+        let date = new Date();
+        let str = date.toString();
+        console.log(str);
+
+        //example 2
+        let obj = {
+            a: 1,
+            b: 2,
+            toString: function() {
+                return `a: ${this.a}, b: ${this.b}`;
+            }
+        }
+
+        let stri = obj.toString();
+        console.log(stri);
+
+        //example 3
+        let a = ["Kaushik", "Samir", "Anushka"];
+        console.log(a.toString());
+    </script>
+</body>
+</html>
